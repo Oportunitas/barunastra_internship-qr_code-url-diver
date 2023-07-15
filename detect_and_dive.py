@@ -38,7 +38,7 @@ for file in dataset:
 
         if qr_data in url_map:
             if (not url_keyword_state[qr_data]):
-                no_keyword += file_name
+                no_keyword.append(file_name)
             qr_data = url_map[qr_data]
         ## if code has dove url previouslt, print past finding
         else:
